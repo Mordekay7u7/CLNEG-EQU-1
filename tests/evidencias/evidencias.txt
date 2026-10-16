@@ -1,0 +1,130 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_anticipo_habilita (test_application.TestAplicacion.test_anticipo_habilita) ... ok
+test_ausencia (test_application.TestAplicacion.test_ausencia) ... ok
+test_cancelar (test_application.TestAplicacion.test_cancelar) ... ok
+test_cancelar_jornada (test_application.TestAplicacion.test_cancelar_jornada) ... ok
+test_cita_inexistente (test_application.TestAplicacion.test_cita_inexistente) ... ok
+test_consulta (test_application.TestAplicacion.test_consulta) ... ok
+test_fuera_jornada (test_application.TestAplicacion.test_fuera_jornada) ... ok
+test_id_duplicado (test_application.TestAplicacion.test_id_duplicado) ... ok
+test_llegada_y_atencion (test_application.TestAplicacion.test_llegada_y_atencion) ... ok
+test_medico_ocupado (test_application.TestAplicacion.test_medico_ocupado) ... ok
+test_paciente_duplicado_otra_sucursal (test_application.TestAplicacion.test_paciente_duplicado_otra_sucursal) ... ok
+test_reserva (test_application.TestAplicacion.test_reserva) ... ok
+test_restriccion_remota (test_application.TestAplicacion.test_restriccion_remota) ... ok
+test_retencion_ajena (test_application.TestAplicacion.test_retencion_ajena) ... ok
+test_retencion_propia (test_application.TestAplicacion.test_retencion_propia) ... ok
+test_retencion_vencida (test_application.TestAplicacion.test_retencion_vencida) ... ok
+test_cuenta_tres (test_ausencias_politica.PruebasAusencias.test_cuenta_tres) ... ok
+test_otro_paciente (test_ausencias_politica.PruebasAusencias.test_otro_paciente) ... ok
+test_restringe (test_ausencias_politica.PruebasAusencias.test_restringe) ... ok
+test_por_estado (test_consultas.PruebasConsultas.test_por_estado) ... ok
+test_por_medico (test_consultas.PruebasConsultas.test_por_medico) ... ok
+test_por_sucursal (test_consultas.PruebasConsultas.test_por_sucursal) ... ok
+test_sin_ocupacion (test_cupos.PruebasCupos.test_sin_ocupacion) ... ok
+test_una_disponible (test_cupos.PruebasCupos.test_una_disponible) ... ok
+test_una_ocupada (test_cupos.PruebasCupos.test_una_ocupada) ... ok
+test_atender_con_llegada (test_domain.TestDominio.test_atender_con_llegada) ... ok
+test_atender_sin_llegada (test_domain.TestDominio.test_atender_sin_llegada) ... ok
+test_ausencia_a_los_20 (test_domain.TestDominio.test_ausencia_a_los_20) ... ok
+test_ausencia_antes_de_20 (test_domain.TestDominio.test_ausencia_antes_de_20) ... ok
+test_cancelacion_auditada (test_domain.TestDominio.test_cancelacion_auditada) ... ok
+test_cancelacion_sin_motivo (test_domain.TestDominio.test_cancelacion_sin_motivo) ... ok
+test_cita_valida (test_domain.TestDominio.test_cita_valida) ... ok
+test_doble_cancelacion (test_domain.TestDominio.test_doble_cancelacion) ... ok
+test_empleado_requiere_justificante (test_domain.TestDominio.test_empleado_requiere_justificante) ... ok
+test_honorarios_24_horas (test_domain.TestDominio.test_honorarios_24_horas) ... ok
+test_honorarios_24_horas_exacto (test_domain.TestDominio.test_honorarios_24_horas_exacto) ... ok
+test_horario_invalido (test_domain.TestDominio.test_horario_invalido) ... ok
+test_identificador_vacio (test_domain.TestDominio.test_identificador_vacio) ... ok
+test_jornada_invalida (test_domain.TestDominio.test_jornada_invalida) ... ok
+test_llegada_en_limite (test_domain.TestDominio.test_llegada_en_limite) ... ok
+test_llegada_tarde_autorizada (test_domain.TestDominio.test_llegada_tarde_autorizada) ... ok
+test_llegada_tarde_sin_permiso (test_domain.TestDominio.test_llegada_tarde_sin_permiso) ... ok
+test_restriccion_tres_ausencias (test_domain.TestDominio.test_restriccion_tres_ausencias) ... ok
+test_retencion_tres_minutos (test_domain.TestDominio.test_retencion_tres_minutos) ... ok
+test_sobrecupo_maximo (test_domain.TestDominio.test_sobrecupo_maximo) ... ok
+test_sobrecupo_sin_autorizacion (test_domain.TestDominio.test_sobrecupo_sin_autorizacion) ... ok
+test_solapamiento_limite (test_domain.TestDominio.test_solapamiento_limite) ... ok
+test_ausente_terminal (test_estados.PruebasEstados.test_ausente_terminal) ... ok
+test_cancelada_terminal (test_estados.PruebasEstados.test_cancelada_terminal) ... ok
+test_pendiente_activa (test_estados.PruebasEstados.test_pendiente_activa) ... ok
+test_reservada_activa (test_estados.PruebasEstados.test_reservada_activa) ... ok
+test_commit (test_extendido.AdaptadoresTest.test_commit) ... ok
+test_envio (test_extendido.AdaptadoresTest.test_envio) ... ok
+test_envio_invalido (test_extendido.AdaptadoresTest.test_envio_invalido) ... ok
+test_excepcion_revierte (test_extendido.AdaptadoresTest.test_excepcion_revierte) ... ok
+test_notificador (test_extendido.AdaptadoresTest.test_notificador) ... ok
+test_reloj (test_extendido.AdaptadoresTest.test_reloj) ... ok
+test_rollback (test_extendido.AdaptadoresTest.test_rollback) ... ok
+test_evento_invalido (test_extendido.AuditoriaTest.test_evento_invalido) ... ok
+test_por_responsable (test_extendido.AuditoriaTest.test_por_responsable) ... ok
+test_registro (test_extendido.AuditoriaTest.test_registro) ... ok
+test_cancelar (test_extendido.ComandosTest.test_cancelar) ... ok
+test_llegada (test_extendido.ComandosTest.test_llegada) ... ok
+test_reservar (test_extendido.ComandosTest.test_reservar) ... ok
+test_historial (test_extendido.ConsultasTest.test_historial) ... ok
+test_historial_vacio (test_extendido.ConsultasTest.test_historial_vacio) ... ok
+test_indicadores (test_extendido.ConsultasTest.test_indicadores) ... ok
+test_indicadores_vacios (test_extendido.ConsultasTest.test_indicadores_vacios) ... ok
+test_por_estado (test_extendido.ConsultasTest.test_por_estado) ... ok
+test_por_medico (test_extendido.ConsultasTest.test_por_medico) ... ok
+test_por_paciente (test_extendido.ConsultasTest.test_por_paciente) ... ok
+test_canal_invalido (test_extendido.PoliticasTest.test_canal_invalido) ... ok
+test_canal_recepcion (test_extendido.PoliticasTest.test_canal_recepcion) ... ok
+test_medico_libre (test_extendido.PoliticasTest.test_medico_libre) ... ok
+test_medico_ocupado (test_extendido.PoliticasTest.test_medico_ocupado) ... ok
+test_paciente_diferente (test_extendido.PoliticasTest.test_paciente_diferente) ... ok
+test_paciente_mismo_horario (test_extendido.PoliticasTest.test_paciente_mismo_horario) ... ok
+test_identidad_vacia (test_extendido.ValoresTest.test_identidad_vacia) ... ok
+test_identidad_valida (test_extendido.ValoresTest.test_identidad_valida) ... ok
+test_intervalo_contiene (test_extendido.ValoresTest.test_intervalo_contiene) ... ok
+test_intervalo_invalido (test_extendido.ValoresTest.test_intervalo_invalido) ... ok
+test_intervalo_solapa (test_extendido.ValoresTest.test_intervalo_solapa) ... ok
+test_intervalo_valido (test_extendido.ValoresTest.test_intervalo_valido) ... ok
+test_politica_limite (test_extendido.ValoresTest.test_politica_limite) ... ok
+test_politica_negativa (test_extendido.ValoresTest.test_politica_negativa) ... ok
+test_politica_no_expirada (test_extendido.ValoresTest.test_politica_no_expirada) ... ok
+test_jornadas_iniciales (test_fabrica.PruebasFabrica.test_jornadas_iniciales) ... ok
+test_servicio_creado (test_fabrica.PruebasFabrica.test_servicio_creado) ... ok
+test_limpia_espacios (test_identificadores.PruebasIdentificadores.test_limpia_espacios) ... ok
+test_tipo_incorrecto (test_identificadores.PruebasIdentificadores.test_tipo_incorrecto) ... ok
+test_vacio (test_identificadores.PruebasIdentificadores.test_vacio) ... ok
+test_commit (test_infrastructure.TestInfraestructura.test_commit) ... ok
+test_copia_aislada (test_infrastructure.TestInfraestructura.test_copia_aislada) ... ok
+test_guardar_y_obtener (test_infrastructure.TestInfraestructura.test_guardar_y_obtener) ... ok
+test_rollback_excepcion (test_infrastructure.TestInfraestructura.test_rollback_excepcion) ... ok
+test_rollback_sin_confirmar (test_infrastructure.TestInfraestructura.test_rollback_sin_confirmar) ... ok
+test_contiene (test_intervalos.PruebasIntervalos.test_contiene) ... ok
+test_contiguos (test_intervalos.PruebasIntervalos.test_contiguos) ... ok
+test_duracion (test_intervalos.PruebasIntervalos.test_duracion) ... ok
+test_invalido (test_intervalos.PruebasIntervalos.test_invalido) ... ok
+test_solapamiento (test_intervalos.PruebasIntervalos.test_solapamiento) ... ok
+test_total (test_reportes.PruebasReportes.test_total) ... ok
+test_vacio (test_reportes.PruebasReportes.test_vacio) ... ok
+test_jornada_aislada (test_repositorios_adicionales.PruebasRepositorios.test_jornada_aislada) ... ok
+test_jornada_guardar (test_repositorios_adicionales.PruebasRepositorios.test_jornada_guardar) ... ok
+test_retencion_expirada (test_repositorios_adicionales.PruebasRepositorios.test_retencion_expirada) ... ok
+test_retencion_vigente (test_repositorios_adicionales.PruebasRepositorios.test_retencion_vigente) ... ok
+test_bloqueo_otro_paciente (test_retenciones_politica.PruebasRetenciones.test_bloqueo_otro_paciente) ... ok
+test_expira_tres_minutos (test_retenciones_politica.PruebasRetenciones.test_expira_tres_minutos) ... ok
+test_sin_bloqueo_propietario (test_retenciones_politica.PruebasRetenciones.test_sin_bloqueo_propietario) ... ok
+test_iso (test_serializacion.PruebasSerializacion.test_iso) ... ok
+test_resumen (test_serializacion.PruebasSerializacion.test_resumen) ... ok
+test_desconocido (test_validacion.PruebasValidacion.test_desconocido) ... ok
+test_recepcion (test_validacion.PruebasValidacion.test_recepcion) ... ok
+test_whatsapp (test_validacion.PruebasValidacion.test_whatsapp) ... ok
+
+----------------------------------------------------------------------
+Ran 115 tests in 0.007s
+
+OK
